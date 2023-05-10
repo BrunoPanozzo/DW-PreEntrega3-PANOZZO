@@ -1,0 +1,69 @@
+.titulos .titulo-importante5 {
+    text-align: left;
+    // font-style: normal;
+    // font-weight: bold;
+    // font-size: 30px;
+    // font-family: $fontTitulo2;
+    @include mySpecialFont (normal, bold, 30px, $fontTitulo2);
+
+    color: white;
+    margin: 10px;
+}
+
+.titulos .formularioContacto {
+    background-color: $myColorContenedor;
+    font-size: 30px;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: baseline;
+    // align-items: flex-start;
+    // align-content: space-between;
+    @include myflex (column, baseline, flex-start, space-between);
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .formularioContacto__dato {
+        // display: flex;
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        // justify-content:space-around;
+        // align-items:baseline;   
+        // align-content: space-around;        
+        @include myflex (row, space-around, baseline, space-around);
+
+        padding: 15px;
+        margin: 5px;
+
+        .formularioContacto__dato--lbl-form {
+            padding-right: 20px;
+        }
+    }
+
+    .formularioContacto__obligatorio textarea {
+        background-color: lightpink;
+        // font-size: 20px;
+        // font-family: $fontTitulo2;
+        @include mySpecialFont (null, null, 20px, $fontTitulo2);
+    }
+
+    .formularioContacto__obligatorio input {
+        background-color: lightpink;
+        // font-size: 20px;
+        // font-family: $fontTitulo2;
+        @include mySpecialFont (null, null, 20px, $fontTitulo2);
+    }
+
+    .formularioContacto__obligatorio select {
+        background-color: lightpink;
+        // font-size: 20px;
+        // font-family: $fontTitulo2;
+        @include mySpecialFont (null, null, 20px, $fontTitulo2);
+    }
+
+    .formularioContacto__opcional input {
+        background-color: lightsalmon;
+        font-size: 20px;
+    }
+}

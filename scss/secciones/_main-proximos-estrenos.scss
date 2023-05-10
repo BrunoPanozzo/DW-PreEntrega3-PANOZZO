@@ -1,0 +1,185 @@
+.proximos-estrenos {
+    background-color: $myColorContenedor;
+    min-height: 70vh;
+
+    .titulo-importante1 {
+        // font-size: 80px;
+        // font-family: $fontTitulo;
+        // font-weight: bold;
+        @include mySpecialFont (null, bold, 80px, $fontTitulo);
+
+        // text-align: left;
+        // color: $myColor;
+        // margin: 50px;
+        // padding-top: 30px;
+        @extend .config-titulo-importante1;
+    }
+
+    .contenedor-proximos-estrenos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "film1 film2 film3"
+            "film4 film5 film6"
+        ;
+        height: 700px;
+
+        // margin: 25px auto;
+        // width: 1600px;
+        // background-color: white;
+        // box-shadow: 0 0 20px rgba(0, 0, 0, 0.401);
+        @extend .configBasica_GridPage;    
+
+
+        .film1 {
+            grid-area: film1;
+        }
+
+        .film2 {
+            grid-area: film2;
+        }
+
+        .film3 {
+            grid-area: film3;
+        }
+
+        .film4 {
+            grid-area: film4;
+        }
+
+        .film5 {
+            grid-area: film5;
+        }
+
+        .film6 {
+            grid-area: film6;
+        }
+
+        .film .imgfilm {
+            float: left;
+            margin: 5px;
+            // background-position: center;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            @include configImagen;
+
+            transition: 0.5s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        } 
+        
+        .film .info-pelicula .titulo-importante4 {
+            // font-style: normal;
+            // font-weight: bold;
+            // font-size: 30px;
+            // font-family: $fontTitulo2;
+            @include mySpecialFont (normal, bold, 30px, $fontTitulo2);
+
+            // text-align: left;
+            // color: rgb(227, 10, 10);
+            // margin: 10px;
+            @extend .config-titulo-importante4;
+        }        
+
+        .film .info-pelicula .genero-pelicula {
+            padding: 10px;
+        }
+    
+        .film .info-pelicula .resumen-pelicula {
+            padding: 10px;
+        }
+    }
+}
+
+
+/* MEDIA QUERIES*/
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+    .proximos-estrenos .titulo-importante1 {
+        font-size: 70px;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "film1 film2"
+            "film3 film4"
+            "film5 film6"
+        ;
+        width: 1400px;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .proximos-estrenos .titulo-importante1 {
+        font-size: 70px;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "film1"
+            "film2"
+            "film3"
+            "film4"
+            "film5"
+            "film6"
+        ;
+        width: 1200px;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    .proximos-estrenos .titulo-importante1 {
+        font-size: 60px;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "film1"
+            "film2"
+            "film3"
+            "film4"
+            "film5"
+            "film6"
+        ;
+        width: 600px;
+        height: auto;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 599px) {
+    .proximos-estrenos .titulo-importante1 {
+        font-size: 50px;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "film1"
+            "film2"
+            "film3"
+            "film4"
+            "film5"
+            "film6"
+        ;
+        width: 400px;
+        height: auto;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+        max-width: 300px;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
+        font-size: 20px;
+    } 
+}
