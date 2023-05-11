@@ -102,14 +102,53 @@
     }
     .titulos .titulo-importante2 {
         font-size: 40px;
+    } 
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+    .titulos .titulo-importante1 {
+        font-size: 60px;
+    }
+    .titulos .titulo-importante2 {
+        font-size: 40px;
+    } 
+    .titulos .contenedor-lista-animada {	        
+        font-size: 35px;
     }
 }
 
-@media (max-width: 599px) {
+@media (min-width: 386px) and (max-width: 499px) {
     .titulos .titulo-importante1 {
         font-size: 50px;
     }
     .titulos .titulo-importante2 {
         font-size: 30px;
-    }  
+    } 
+    .titulos .contenedor-lista-animada {	        
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 385px) {
+    .titulos .titulo-importante1 {
+        font-size: 50px;
+    }
+    .titulos .titulo-importante2 {
+        font-size: 30px;
+    } 
+    .titulos .contenedor-lista-animada {	        
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 349px) {
+    .titulos .titulo-importante1 {
+        font-size: 40px;
+    }
+    .titulos .titulo-importante2 {
+        font-size: 30px;
+    } 
+    .titulos .contenedor-lista-animada {	        
+        font-size: 20px;
+    }
 }

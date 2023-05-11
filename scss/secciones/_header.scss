@@ -19,7 +19,8 @@
         // align-items: center;       
         @include myflex (row, baseline, center, null);
 
-        .navbar-nav .nav-item {
+        .navbar-nav  {
+            .nav-item {
                 a {
                 text-decoration: none;
                 color: $myColor !important;
@@ -33,7 +34,7 @@
                 }
             }
         }
-        
+    }
         .boton-buscar {
             margin-right: 20px; 
             color: $myColor !important;

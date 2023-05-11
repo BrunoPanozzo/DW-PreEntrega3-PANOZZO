@@ -108,6 +108,13 @@
         color: #333;
         font-size: 40px; }
 
+/* MEDIA QUERIES*/
+@media (max-width: 349px) {
+  .pie .contacto a {
+    font-size: 35px;
+    margin: 10px 10px;
+    padding-left: 38px; } }
+
 /*MAIN INDEX*/
 .titulos {
   background-image: url("../recursos/inicio/portadaCine.jpg");
@@ -176,11 +183,37 @@
   .titulos .titulo-importante2 {
     font-size: 40px; } }
 
-@media (max-width: 599px) {
+@media (min-width: 500px) and (max-width: 599px) {
+  .titulos .titulo-importante1 {
+    font-size: 60px; }
+  .titulos .titulo-importante2 {
+    font-size: 40px; }
+  .titulos .contenedor-lista-animada {
+    font-size: 35px; } }
+
+@media (min-width: 386px) and (max-width: 499px) {
   .titulos .titulo-importante1 {
     font-size: 50px; }
   .titulos .titulo-importante2 {
+    font-size: 30px; }
+  .titulos .contenedor-lista-animada {
     font-size: 30px; } }
+
+@media (min-width: 350px) and (max-width: 385px) {
+  .titulos .titulo-importante1 {
+    font-size: 50px; }
+  .titulos .titulo-importante2 {
+    font-size: 30px; }
+  .titulos .contenedor-lista-animada {
+    font-size: 25px; } }
+
+@media (max-width: 349px) {
+  .titulos .titulo-importante1 {
+    font-size: 40px; }
+  .titulos .titulo-importante2 {
+    font-size: 30px; }
+  .titulos .contenedor-lista-animada {
+    font-size: 20px; } }
 
 .cartelera {
   background-color: #c04338;
@@ -277,6 +310,18 @@
   .cartelera .contenedor-cartelera .film .imgfilm {
     max-width: 300px; } }
 
+@media (max-width: 399px) {
+  .cartelera .titulo-importante1 {
+    font-size: 50px; }
+  .cartelera .contenedor-cartelera {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
+    width: 300px;
+    height: auto; }
+  .cartelera .contenedor-cartelera .film .imgfilm {
+    max-width: 200px; } }
+
 .combos {
   background-color: #c04338;
   min-height: 70vh; }
@@ -354,6 +399,18 @@
     height: auto; }
   .combos .contenedor-combos .film .imgfilm {
     max-width: 300px; } }
+
+@media (max-width: 399px) {
+  .combos .titulo-importante1 {
+    font-size: 50px; }
+  .combos .contenedor-combos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "film1" "film2" "film3" "film4";
+    width: 300px;
+    height: auto; }
+  .combos .contenedor-combos .film .imgfilm {
+    max-width: 200px; } }
 
 .titulos .titulo-importante5 {
   text-align: left;
@@ -490,5 +547,19 @@
     height: auto; }
   .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
     max-width: 300px; }
+  .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
+    font-size: 20px; } }
+
+@media (max-width: 399px) {
+  .proximos-estrenos .titulo-importante1 {
+    font-size: 50px; }
+  .proximos-estrenos .contenedor-proximos-estrenos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6";
+    width: 300px;
+    height: auto; }
+  .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+    max-width: 200px; }
   .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
     font-size: 20px; } }

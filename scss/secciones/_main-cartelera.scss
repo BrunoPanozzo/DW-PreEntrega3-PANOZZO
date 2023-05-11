@@ -204,3 +204,30 @@
         max-width: 300px;
     }
 }
+
+
+@media (max-width: 399px) {
+    .cartelera .titulo-importante1 {
+        font-size: 50px;
+    }
+    .cartelera .contenedor-cartelera {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);        
+        grid-template-areas:
+            "film1"
+            "film2"
+            "film3"
+            "film4"
+            "film5"
+            "film6"
+            "film7"
+            "film8"
+            "film9"
+        ;
+        width: 300px;
+        height: auto;
+    }
+    .cartelera .contenedor-cartelera .film .imgfilm {
+        max-width: 200px;
+    }
+}

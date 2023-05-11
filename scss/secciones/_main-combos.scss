@@ -151,3 +151,25 @@
         max-width: 300px;
     }
 }
+
+
+@media (max-width: 399px) {
+    .combos .titulo-importante1 {
+        font-size: 50px;
+    }
+    .combos .contenedor-combos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "film1"
+            "film2"
+            "film3"
+            "film4"
+        ;
+        width: 300px;
+        height: auto;
+    }    
+    .combos .contenedor-combos .film .imgfilm {
+        max-width: 200px;
+    }
+}
