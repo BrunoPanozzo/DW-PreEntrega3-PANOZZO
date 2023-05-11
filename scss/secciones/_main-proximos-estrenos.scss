@@ -158,7 +158,7 @@
     }
 }
 
-@media (max-width: 599px) {
+@media (min-width: 400px) and (max-width: 599px) {
     .proximos-estrenos .titulo-importante1 {
         font-size: 50px;
     }
@@ -184,10 +184,35 @@
     } 
 }
 
-
-@media (max-width: 399px) {
+@media (min-width: 350px) and (max-width: 399px) {
     .proximos-estrenos .titulo-importante1 {
-        font-size: 50px;
+        font-size: 40px;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "film1"
+            "film2"
+            "film3"
+            "film4"
+            "film5"
+            "film6"
+        ;
+        width: 350px;
+        height: auto;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+        max-width: 250px;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
+        font-size: 15px;
+    } 
+}
+
+@media (min-width: 300px) and (max-width: 349px) {
+    .proximos-estrenos .titulo-importante1 {
+        font-size: 30px;
     }
     .proximos-estrenos .contenedor-proximos-estrenos {
         grid-template-columns: repeat(1, 1fr);
@@ -201,6 +226,32 @@
             "film6"
         ;
         width: 300px;
+        height: auto;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+        max-width: 200px;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
+        font-size: 12px;
+    } 
+}
+
+@media (max-width: 299px) {
+    .proximos-estrenos .titulo-importante1 {
+        font-size: 30px;
+    }
+    .proximos-estrenos .contenedor-proximos-estrenos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "film1"
+            "film2"
+            "film3"
+            "film4"
+            "film5"
+            "film6"
+        ;
+        width: 230px;
         height: auto;
     }
     .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {

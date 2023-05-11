@@ -55,6 +55,8 @@
   justify-content: baseline;
   align-items: flex-start;
   align-content: space-between; }
+  #encabezado .nav-encabezado .encabezado-cuerpo .imagen-nav img {
+    height: 12vh; }
   #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal {
     display: flex;
     flex-direction: row;
@@ -296,10 +298,15 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
     width: 600px;
     height: auto; }
+  .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
   .cartelera .contenedor-cartelera .film .imgfilm {
     max-width: 500px; } }
 
-@media (max-width: 599px) {
+@media (min-width: 400px) and (max-width: 599px) {
   .cartelera .titulo-importante1 {
     font-size: 50px; }
   .cartelera .contenedor-cartelera {
@@ -308,18 +315,62 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
     width: 400px;
     height: auto; }
+  .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
   .cartelera .contenedor-cartelera .film .imgfilm {
     max-width: 300px; } }
 
-@media (max-width: 399px) {
+@media (min-width: 350px) and (max-width: 399px) {
   .cartelera .titulo-importante1 {
-    font-size: 50px; }
+    font-size: 40px; }
   .cartelera .contenedor-cartelera {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
-    width: 300px;
+    width: 350px;
     height: auto; }
+  .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .cartelera .contenedor-cartelera .film .imgfilm {
+    max-width: 300px; } }
+
+@media (min-width: 300px) and (max-width: 349px) {
+  .cartelera .titulo-importante1 {
+    font-size: 30px; }
+  .cartelera .contenedor-cartelera {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
+    width: 310px;
+    height: auto; }
+  .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif; }
+  .cartelera .contenedor-cartelera .film .imgfilm {
+    max-width: 250px; } }
+
+@media (max-width: 299px) {
+  .cartelera .titulo-importante1 {
+    font-size: 30px; }
+  .cartelera .contenedor-cartelera {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
+    width: 230px;
+    height: auto; }
+  .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif; }
   .cartelera .contenedor-cartelera .film .imgfilm {
     max-width: 200px; } }
 
@@ -389,7 +440,7 @@
   .combos .contenedor-combos .film .imgfilm {
     max-width: 500px; } }
 
-@media (max-width: 599px) {
+@media (min-width: 400px) and (max-width: 599px) {
   .combos .titulo-importante1 {
     font-size: 50px; }
   .combos .contenedor-combos {
@@ -401,7 +452,7 @@
   .combos .contenedor-combos .film .imgfilm {
     max-width: 300px; } }
 
-@media (max-width: 399px) {
+@media (min-width: 350px) and (max-width: 399px) {
   .combos .titulo-importante1 {
     font-size: 50px; }
   .combos .contenedor-combos {
@@ -409,6 +460,30 @@
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "film1" "film2" "film3" "film4";
     width: 300px;
+    height: auto; }
+  .combos .contenedor-combos .film .imgfilm {
+    max-width: 200px; } }
+
+@media (min-width: 300px) and (max-width: 349px) {
+  .combos .titulo-importante1 {
+    font-size: 40px; }
+  .combos .contenedor-combos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "film1" "film2" "film3" "film4";
+    width: 300px;
+    height: auto; }
+  .combos .contenedor-combos .film .imgfilm {
+    max-width: 200px; } }
+
+@media (max-width: 299px) {
+  .combos .titulo-importante1 {
+    font-size: 30px; }
+  .combos .contenedor-combos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "film1" "film2" "film3" "film4";
+    width: 230px;
     height: auto; }
   .combos .contenedor-combos .film .imgfilm {
     max-width: 200px; } }
@@ -537,7 +612,7 @@
   .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
     max-width: 500px; } }
 
-@media (max-width: 599px) {
+@media (min-width: 400px) and (max-width: 599px) {
   .proximos-estrenos .titulo-importante1 {
     font-size: 50px; }
   .proximos-estrenos .contenedor-proximos-estrenos {
@@ -551,14 +626,42 @@
   .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
     font-size: 20px; } }
 
-@media (max-width: 399px) {
+@media (min-width: 350px) and (max-width: 399px) {
   .proximos-estrenos .titulo-importante1 {
-    font-size: 50px; }
+    font-size: 40px; }
+  .proximos-estrenos .contenedor-proximos-estrenos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6";
+    width: 350px;
+    height: auto; }
+  .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+    max-width: 250px; }
+  .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
+    font-size: 15px; } }
+
+@media (min-width: 300px) and (max-width: 349px) {
+  .proximos-estrenos .titulo-importante1 {
+    font-size: 30px; }
   .proximos-estrenos .contenedor-proximos-estrenos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6";
     width: 300px;
+    height: auto; }
+  .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+    max-width: 200px; }
+  .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
+    font-size: 12px; } }
+
+@media (max-width: 299px) {
+  .proximos-estrenos .titulo-importante1 {
+    font-size: 30px; }
+  .proximos-estrenos .contenedor-proximos-estrenos {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6";
+    width: 230px;
     height: auto; }
   .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
     max-width: 200px; }

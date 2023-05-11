@@ -14,6 +14,11 @@
         @include myflex (row, baseline, flex-start, space-between);
 
         .encabezado-cuerpo {
+            .imagen-nav{
+                img {   
+                    height: 12vh;
+                }
+            }
             .navbar-personal {
                 // display: flex;
                 // flex-direction: row;
