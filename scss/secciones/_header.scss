@@ -1,5 +1,5 @@
-.encabezado {
-    .navbar {        
+#encabezado {
+    .nav-encabezado {        
         min-height: 15vh;
         background-image: $myGrad;
         border-bottom: 10px solid rgb(11, 6, 6);
@@ -13,8 +13,8 @@
         // align-content: space-between;
         @include myflex (row, baseline, flex-start, space-between);
 
-        .container-fluid {
-            .collapse {
+        .encabezado-cuerpo {
+            .navbar-personal {
                 // display: flex;
                 // flex-direction: row;
                 // flex-wrap: wrap;
@@ -22,8 +22,8 @@
                 // align-items: center;       
                 @include myflex (row, baseline, center, null);
 
-                .navbar-nav {
-                    .nav-item {
+                .lista-enlaces {
+                    .enlace {
                         a {
                             text-decoration: none;
                             color: $myColor !important;
@@ -39,7 +39,7 @@
                     }
                 }
 
-                .d-flex {
+                .form-btn-buscar {
                     .boton-buscar {
                         margin-right: 20px;
                         color: $myColor !important;

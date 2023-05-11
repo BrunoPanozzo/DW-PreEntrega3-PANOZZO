@@ -44,7 +44,7 @@
   100% {
     margin-top: 0px; } }
 
-.encabezado .navbar {
+#encabezado .nav-encabezado {
   min-height: 15vh;
   background-image: linear-gradient(to right, #290101, #510101, #790101, #a10101);
   border-bottom: 10px solid #0b0606;
@@ -55,26 +55,26 @@
   justify-content: baseline;
   align-items: flex-start;
   align-content: space-between; }
-  .encabezado .navbar .container-fluid .collapse {
+  #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: baseline;
     align-items: center; }
-    .encabezado .navbar .container-fluid .collapse .navbar-nav .nav-item a {
+    #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal .lista-enlaces .enlace a {
       text-decoration: none;
       color: #dffffb !important;
       font-size: 18px;
       margin: 15px; }
-      .encabezado .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
+      #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal .lista-enlaces .enlace a:hover {
         color: #ebd219 !important;
         background-color: transparent;
         font-weight: bold; }
-    .encabezado .navbar .container-fluid .collapse .d-flex .boton-buscar {
+    #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal .form-btn-buscar .boton-buscar {
       margin-right: 20px;
       color: #dffffb !important;
       font-size: 18px; }
-      .encabezado .navbar .container-fluid .collapse .d-flex .boton-buscar:hover {
+      #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal .form-btn-buscar .boton-buscar:hover {
         background-color: #ebd219; }
 
 .pie {
