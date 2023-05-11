@@ -1,5 +1,10 @@
-#main_index {
-    .navbar {
+.encabezado {
+    .navbar {        
+        min-height: 15vh;
+        background-image: $myGrad;
+        border-bottom: 10px solid rgb(11, 6, 6);
+        width: 100%;
+
         // display: flex;
         // flex-direction: row;
         // flex-wrap: wrap;
@@ -7,10 +12,6 @@
         // align-items: flex-start;
         // align-content: space-between;
         @include myflex (row, baseline, flex-start, space-between);
-
-        min-height: 15vh;
-        background-image: $myGrad;
-        border-bottom: 10px solid rgb(11, 6, 6);
 
         .container-fluid {
             .collapse {
@@ -38,13 +39,15 @@
                     }
                 }
 
-                .boton-buscar {
-                    margin-right: 20px;
-                    color: $myColor !important;
-                    font-size: 18px;
+                .d-flex {
+                    .boton-buscar {
+                        margin-right: 20px;
+                        color: $myColor !important;
+                        font-size: 18px;
 
-                    &:hover {
-                        background-color: rgb(235, 210, 25);
+                        &:hover {
+                            background-color: rgb(235, 210, 25);
+                        }
                     }
                 }
             }
