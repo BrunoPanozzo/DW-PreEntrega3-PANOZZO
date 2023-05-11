@@ -1,47 +1,52 @@
-.encabezado {
-    // display: flex;
-    // flex-direction: row;
-    // flex-wrap: wrap;
-    // justify-content: baseline;
-    // align-items: flex-start;
-    // align-content: space-between;
-    @include myflex (row, baseline, flex-start, space-between);
-
-    min-height: 15vh;
-    background-image: $myGrad;
-    border-bottom: 10px solid rgb(11, 6, 6);  
-
-    .container-fluid .collapse {
+#main_index {
+    .navbar {
         // display: flex;
         // flex-direction: row;
         // flex-wrap: wrap;
         // justify-content: baseline;
-        // align-items: center;       
-        @include myflex (row, baseline, center, null);
+        // align-items: flex-start;
+        // align-content: space-between;
+        @include myflex (row, baseline, flex-start, space-between);
 
-        .navbar-nav  {
-            .nav-item {
-                a {
-                text-decoration: none;
-                color: $myColor !important;
-                font-size: 18px;
-                margin: 15px; 
-                
-                &:hover {
-                    color: rgb(235, 210, 25) !important;
-                    background-color: transparent;
-                    font-weight: bold;
+        min-height: 15vh;
+        background-image: $myGrad;
+        border-bottom: 10px solid rgb(11, 6, 6);
+
+        .container-fluid {
+            .collapse {
+                // display: flex;
+                // flex-direction: row;
+                // flex-wrap: wrap;
+                // justify-content: baseline;
+                // align-items: center;       
+                @include myflex (row, baseline, center, null);
+
+                .navbar-nav {
+                    .nav-item {
+                        a {
+                            text-decoration: none;
+                            color: $myColor !important;
+                            font-size: 18px;
+                            margin: 15px;
+
+                            &:hover {
+                                color: rgb(235, 210, 25) !important;
+                                background-color: transparent;
+                                font-weight: bold;
+                            }
+                        }
+                    }
                 }
-            }
-        }
-    }
-        .boton-buscar {
-            margin-right: 20px; 
-            color: $myColor !important;
-            font-size: 18px;
 
-            &:hover {
-                background-color: rgb(235, 210, 25);
+                .boton-buscar {
+                    margin-right: 20px;
+                    color: $myColor !important;
+                    font-size: 18px;
+
+                    &:hover {
+                        background-color: rgb(235, 210, 25);
+                    }
+                }
             }
         }
     }
