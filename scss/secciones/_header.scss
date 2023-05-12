@@ -1,61 +1,47 @@
-#encabezado {
-    .nav-encabezado {        
-        min-height: 15vh;
-        background-image: $myGrad;
-        border-bottom: 10px solid rgb(11, 6, 6);
-        width: 100%;
+/*HEADER*/
 
-        // display: flex;
-        // flex-direction: row;
-        // flex-wrap: wrap;
-        // justify-content: baseline;
-        // align-items: flex-start;
-        // align-content: space-between;
-        @include myflex (row, baseline, flex-start, space-between);
+.encabezado .nav-encabezado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: flex-start;
+    align-content: space-between;
+    min-height: 15vh;
+    background-image: $myGrad;
+    border-bottom: 10px solid rgb(8, 6, 11);
+}
 
-        .encabezado-cuerpo {
-            .imagen-nav{
-                img {   
-                    height: 12vh;
-                }
-            }
-            .navbar-personal {
-                // display: flex;
-                // flex-direction: row;
-                // flex-wrap: wrap;
-                // justify-content: baseline;
-                // align-items: center;       
-                @include myflex (row, baseline, center, null);
+.encabezado .nav-encabezado .encabezado-cuerpo .navbar-toggler .navbar-toggler-icon {
+    background-color: rgb(235, 210, 25);
+}
+.encabezado .nav-encabezado .encabezado-cuerpo .mi-navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: center;
+}
 
-                .lista-enlaces {
-                    .enlace {
-                        a {
-                            text-decoration: none;
-                            color: $myColor !important;
-                            font-size: 18px;
-                            margin: 15px;
+.encabezado .nav-encabezado .encabezado-cuerpo .mi-navbar .navbar-nav .nav-item a {
+    text-decoration: none;
+    color: $myColor;
+    font-size: 25px;
+    margin: 15px;
+}
 
-                            &:hover {
-                                color: rgb(235, 210, 25) !important;
-                                background-color: transparent;
-                                font-weight: bold;
-                            }
-                        }
-                    }
-                }
+.encabezado .nav-encabezado .encabezado-cuerpo .mi-navbar .navbar-nav .nav-item a:hover {
+    color: rgb(235, 210, 25);
+    background-color: transparent;
+    font-weight: bold;
+}
 
-                .form-btn-buscar {
-                    .boton-buscar {
-                        margin-right: 20px;
-                        color: $myColor !important;
-                        font-size: 18px;
+.encabezado .nav-encabezado .encabezado-cuerpo .mi-navbar .form-btn-buscar .boton-buscar {
+    margin-right: 20px; 
+    color: $myColor;
+    font-size: 25px;
+}
 
-                        &:hover {
-                            background-color: rgb(235, 210, 25);
-                        }
-                    }
-                }
-            }
-        }
-    }
+.encabezado .nav-encabezado .encabezado-cuerpo .mi-navbar .form-btn-buscar .boton-buscar:hover {
+    background-color: rgb(235, 210, 25);
 }

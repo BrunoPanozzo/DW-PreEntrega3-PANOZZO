@@ -44,40 +44,46 @@
   100% {
     margin-top: 0px; } }
 
-#encabezado .nav-encabezado {
-  min-height: 15vh;
-  background-image: linear-gradient(to right, #290101, #510101, #790101, #a10101);
-  border-bottom: 10px solid #0b0606;
-  width: 100%;
+/*HEADER*/
+.encabezado .nav-encabezado {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: baseline;
   align-items: flex-start;
-  align-content: space-between; }
-  #encabezado .nav-encabezado .encabezado-cuerpo .imagen-nav img {
-    height: 12vh; }
-  #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: baseline;
-    align-items: center; }
-    #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal .lista-enlaces .enlace a {
-      text-decoration: none;
-      color: #dffffb !important;
-      font-size: 18px;
-      margin: 15px; }
-      #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal .lista-enlaces .enlace a:hover {
-        color: #ebd219 !important;
-        background-color: transparent;
-        font-weight: bold; }
-    #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal .form-btn-buscar .boton-buscar {
-      margin-right: 20px;
-      color: #dffffb !important;
-      font-size: 18px; }
-      #encabezado .nav-encabezado .encabezado-cuerpo .navbar-personal .form-btn-buscar .boton-buscar:hover {
-        background-color: #ebd219; }
+  align-content: space-between;
+  min-height: 15vh;
+  background-image: linear-gradient(to right, #290101, #510101, #790101, #a10101);
+  border-bottom: 10px solid #08060b; }
+
+.encabezado .nav-encabezado .encabezado-cuerpo .navbar-toggler .navbar-toggler-icon {
+  background-color: #ebd219; }
+
+.encabezado .nav-encabezado .encabezado-cuerpo .mi-navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  align-items: center; }
+
+.encabezado .nav-encabezado .encabezado-cuerpo .mi-navbar .navbar-nav .nav-item a {
+  text-decoration: none;
+  color: #dffffb;
+  font-size: 25px;
+  margin: 15px; }
+
+.encabezado .nav-encabezado .encabezado-cuerpo .mi-navbar .navbar-nav .nav-item a:hover {
+  color: #ebd219;
+  background-color: transparent;
+  font-weight: bold; }
+
+.encabezado .nav-encabezado .encabezado-cuerpo .mi-navbar .form-btn-buscar .boton-buscar {
+  margin-right: 20px;
+  color: #dffffb;
+  font-size: 25px; }
+
+.encabezado .nav-encabezado .encabezado-cuerpo .mi-navbar .form-btn-buscar .boton-buscar:hover {
+  background-color: #ebd219; }
 
 .pie {
   padding-bottom: 20px;
