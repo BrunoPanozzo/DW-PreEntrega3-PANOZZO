@@ -55,7 +55,7 @@
   justify-content: baseline;
   align-items: flex-start;
   align-content: space-between; }
-  .nav-encabezado .encabezado-cuerpo .logo_img img {
+  .nav-encabezado .encabezado-cuerpo .logo-img img {
     height: 12vh; }
   .nav-encabezado .encabezado-cuerpo .mi-navbar .lista-enlaces .enlace a {
     text-decoration: none;
@@ -73,6 +73,19 @@
     .nav-encabezado .encabezado-cuerpo .mi-navbar .form-btn-buscar .boton-buscar:hover {
       background-color: #ebd219; }
 
+/* MEDIA QUERIES*/
+@media (min-width: 600px) and (max-width: 1000px) {
+  .nav-encabezado .encabezado-cuerpo .mi-navbar .lista-enlaces .enlace a {
+    font-size: 25px; } }
+
+@media (min-width: 350px) and (max-width: 599px) {
+  .nav-encabezado .encabezado-cuerpo .mi-navbar .lista-enlaces .enlace a {
+    font-size: 20px; } }
+
+@media (max-width: 349px) {
+  .nav-encabezado .encabezado-cuerpo .mi-navbar .lista-enlaces .enlace a {
+    font-size: 15px; } }
+
 .pie {
   padding-bottom: 20px;
   background-image: linear-gradient(to right, #290101, #510101, #790101, #a10101);
@@ -86,7 +99,6 @@
   align-items: flex-start;
   align-content: space-between; }
   .pie .contacto {
-    height: 50px;
     width: 100%;
     text-align: center;
     color: blue;
@@ -104,6 +116,14 @@
       .pie .contacto a:hover {
         color: #333;
         font-size: 40px; }
+    .pie .contacto button {
+      font-size: 15px;
+      margin: 15px 15px;
+      padding-left: 50px; }
+      .pie .contacto button:hover {
+        font-size: 20px; }
+    .pie .contacto .btn-secondary {
+      background-color: blueviolet; }
 
 /* MEDIA QUERIES*/
 @media (max-width: 349px) {
@@ -113,24 +133,8 @@
     padding-left: 38px; } }
 
 /*MAIN INDEX*/
-.main-index {
-  position: relative; }
-  .main-index:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.5;
-    background-image: url("../recursos/inicio/portadaCine.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover; }
-
 .titulos {
-  position: relative;
+  background-image: url("../recursos/inicio/portadaCine.jpg");
   min-height: 70vh;
   height: auto;
   background-position: center;
@@ -182,25 +186,33 @@
   .titulos .titulo-importante1 {
     font-size: 70px; }
   .titulos .titulo-importante2 {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .titulos .titulo-importante3 {
+    font-size: 40px; } }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
   .titulos .titulo-importante1 {
     font-size: 70px; }
   .titulos .titulo-importante2 {
-    font-size: 50px; } }
+    font-size: 50px; }
+  .titulos .titulo-importante3 {
+    font-size: 40px; } }
 
 @media (min-width: 600px) and (max-width: 1199px) {
   .titulos .titulo-importante1 {
     font-size: 60px; }
   .titulos .titulo-importante2 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .titulos .titulo-importante3 {
+    font-size: 30px; } }
 
 @media (min-width: 500px) and (max-width: 599px) {
   .titulos .titulo-importante1 {
     font-size: 60px; }
   .titulos .titulo-importante2 {
     font-size: 40px; }
+  .titulos .titulo-importante3 {
+    font-size: 30px; }
   .titulos .contenedor-lista-animada {
     font-size: 35px; } }
 
@@ -209,6 +221,8 @@
     font-size: 50px; }
   .titulos .titulo-importante2 {
     font-size: 30px; }
+  .titulos .titulo-importante3 {
+    font-size: 20px; }
   .titulos .contenedor-lista-animada {
     font-size: 30px; } }
 
@@ -217,6 +231,8 @@
     font-size: 50px; }
   .titulos .titulo-importante2 {
     font-size: 30px; }
+  .titulos .titulo-importante3 {
+    font-size: 20px; }
   .titulos .contenedor-lista-animada {
     font-size: 25px; } }
 
@@ -225,6 +241,8 @@
     font-size: 40px; }
   .titulos .titulo-importante2 {
     font-size: 30px; }
+  .titulos .titulo-importante3 {
+    font-size: 20px; }
   .titulos .contenedor-lista-animada {
     font-size: 20px; } }
 
@@ -308,13 +326,13 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
     width: 600px;
     height: auto; }
-  .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif; }
-  .cartelera .contenedor-cartelera .film .imgfilm {
-    max-width: 500px; } }
+    .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif; }
+    .cartelera .contenedor-cartelera .film .imgfilm {
+      max-width: 500px; } }
 
 @media (min-width: 400px) and (max-width: 599px) {
   .cartelera .titulo-importante1 {
@@ -325,13 +343,17 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
     width: 400px;
     height: auto; }
-  .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif; }
-  .cartelera .contenedor-cartelera .film .imgfilm {
-    max-width: 300px; } }
+    .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif; }
+    .cartelera .contenedor-cartelera .film .info-pelicula .genero-pelicula {
+      font-size: 15px; }
+    .cartelera .contenedor-cartelera .film .info-pelicula .resumen-pelicula {
+      font-size: 15px; }
+    .cartelera .contenedor-cartelera .film .imgfilm {
+      max-width: 300px; } }
 
 @media (min-width: 350px) and (max-width: 399px) {
   .cartelera .titulo-importante1 {
@@ -342,13 +364,17 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
     width: 350px;
     height: auto; }
-  .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif; }
-  .cartelera .contenedor-cartelera .film .imgfilm {
-    max-width: 300px; } }
+    .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif; }
+    .cartelera .contenedor-cartelera .film .info-pelicula .genero-pelicula {
+      font-size: 15px; }
+    .cartelera .contenedor-cartelera .film .info-pelicula .resumen-pelicula {
+      font-size: 15px; }
+    .cartelera .contenedor-cartelera .film .imgfilm {
+      max-width: 300px; } }
 
 @media (min-width: 300px) and (max-width: 349px) {
   .cartelera .titulo-importante1 {
@@ -359,13 +385,17 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
     width: 310px;
     height: auto; }
-  .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif; }
-  .cartelera .contenedor-cartelera .film .imgfilm {
-    max-width: 250px; } }
+    .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif; }
+    .cartelera .contenedor-cartelera .film .info-pelicula .genero-pelicula {
+      font-size: 13px; }
+    .cartelera .contenedor-cartelera .film .info-pelicula .resumen-pelicula {
+      font-size: 13px; }
+    .cartelera .contenedor-cartelera .film .imgfilm {
+      max-width: 250px; } }
 
 @media (max-width: 299px) {
   .cartelera .titulo-importante1 {
@@ -376,13 +406,17 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6" "film7" "film8" "film9";
     width: 230px;
     height: auto; }
-  .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif; }
-  .cartelera .contenedor-cartelera .film .imgfilm {
-    max-width: 200px; } }
+    .cartelera .contenedor-cartelera .film .info-pelicula .titulo-importante4 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif; }
+    .cartelera .contenedor-cartelera .film .info-pelicula .genero-pelicula {
+      font-size: 13px; }
+    .cartelera .contenedor-cartelera .film .info-pelicula .resumen-pelicula {
+      font-size: 13px; }
+    .cartelera .contenedor-cartelera .film .imgfilm {
+      max-width: 200px; } }
 
 .combos {
   background-color: #c04338;
@@ -419,6 +453,8 @@
       font-weight: bold;
       font-size: 30px;
       font-family: Arial, Helvetica, sans-serif; }
+    .combos .contenedor-combos .film .info-combo .disponible-combo {
+      padding-left: 20px; }
 
 /* MEDIA QUERIES*/
 @media (min-width: 1400px) and (max-width: 1600px) {
@@ -447,8 +483,8 @@
     grid-template-areas: "film1" "film2" "film3" "film4";
     width: 600px;
     height: auto; }
-  .combos .contenedor-combos .film .imgfilm {
-    max-width: 500px; } }
+    .combos .contenedor-combos .film .imgfilm {
+      max-width: 500px; } }
 
 @media (min-width: 400px) and (max-width: 599px) {
   .combos .titulo-importante1 {
@@ -459,8 +495,12 @@
     grid-template-areas: "film1" "film2" "film3" "film4";
     width: 400px;
     height: auto; }
-  .combos .contenedor-combos .film .imgfilm {
-    max-width: 300px; } }
+    .combos .contenedor-combos .film .imgfilm {
+      max-width: 300px; }
+    .combos .contenedor-combos .film .info-combo .titulo-importante4 {
+      font-size: 25px; }
+    .combos .contenedor-combos .film .info-combo .disponible-combo {
+      font-size: 15x; } }
 
 @media (min-width: 350px) and (max-width: 399px) {
   .combos .titulo-importante1 {
@@ -471,8 +511,12 @@
     grid-template-areas: "film1" "film2" "film3" "film4";
     width: 300px;
     height: auto; }
-  .combos .contenedor-combos .film .imgfilm {
-    max-width: 200px; } }
+    .combos .contenedor-combos .film .imgfilm {
+      max-width: 200px; }
+    .combos .contenedor-combos .film .info-combo .titulo-importante4 {
+      font-size: 25px; }
+    .combos .contenedor-combos .film .info-combo .disponible-combo {
+      font-size: 12px; } }
 
 @media (min-width: 300px) and (max-width: 349px) {
   .combos .titulo-importante1 {
@@ -483,8 +527,12 @@
     grid-template-areas: "film1" "film2" "film3" "film4";
     width: 300px;
     height: auto; }
-  .combos .contenedor-combos .film .imgfilm {
-    max-width: 200px; } }
+    .combos .contenedor-combos .film .imgfilm {
+      max-width: 200px; }
+    .combos .contenedor-combos .film .info-combo .titulo-importante4 {
+      font-size: 25px; }
+    .combos .contenedor-combos .film .info-combo .disponible-combo {
+      font-size: 12px; } }
 
 @media (max-width: 299px) {
   .combos .titulo-importante1 {
@@ -495,8 +543,12 @@
     grid-template-areas: "film1" "film2" "film3" "film4";
     width: 230px;
     height: auto; }
-  .combos .contenedor-combos .film .imgfilm {
-    max-width: 200px; } }
+    .combos .contenedor-combos .film .imgfilm {
+      max-width: 200px; }
+    .combos .contenedor-combos .film .info-combo .titulo-importante4 {
+      font-size: 25px; }
+    .combos .contenedor-combos .film .info-combo .disponible-combo {
+      font-size: 10px; } }
 
 .titulos .titulo-importante5 {
   text-align: left;
@@ -510,14 +562,14 @@
 .titulos .formularioContacto {
   background-color: #c04338;
   font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: baseline;
   align-items: flex-start;
-  align-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  align-content: space-between; }
   .titulos .formularioContacto .formularioContacto__dato {
     display: flex;
     flex-direction: row;
@@ -529,7 +581,7 @@
     margin: 5px; }
     .titulos .formularioContacto .formularioContacto__dato .formularioContacto__dato--lbl-form {
       padding-right: 20px; }
-  .titulos .formularioContacto .formularioContacto__obligatorio textarea {
+  .titulos .formularioContacto .formularioContacto__opcional textarea {
     background-color: lightpink;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif; }
@@ -544,6 +596,94 @@
   .titulos .formularioContacto .formularioContacto__opcional input {
     background-color: lightsalmon;
     font-size: 20px; }
+  .titulos .formularioContacto .formularioContacto__btnEnviar {
+    padding: 15px;
+    margin: 5px; }
+
+/* MEDIA QUERIES */
+@media (min-width: 450px) and (max-width: 600px) {
+  .titulos .titulo-importante1 {
+    font-size: 50px; }
+  .titulos .titulo-importante5 {
+    font-size: 20px; }
+  .titulos .formularioContacto .formularioContacto__dato {
+    padding: 15px;
+    margin: 5px; }
+    .titulos .formularioContacto .formularioContacto__dato .formularioContacto__dato--lbl-form {
+      font-size: 25px; }
+  .titulos .formularioContacto .formularioContacto__btnEnviar {
+    font-size: 25px;
+    padding: 15px;
+    margin: 5px; } }
+
+@media (min-width: 386px) and (max-width: 449px) {
+  .titulos .titulo-importante1 {
+    font-size: 40px; }
+  .titulos .titulo-importante5 {
+    font-size: 20px; }
+  .titulos .formularioContacto .formularioContacto__opcional textarea {
+    font-size: 20px; }
+  .titulos .formularioContacto .formularioContacto__obligatorio input {
+    font-size: 20px; }
+  .titulos .formularioContacto .formularioContacto__obligatorio select {
+    font-size: 20px; }
+  .titulos .formularioContacto .formularioContacto__opcional input {
+    font-size: 20px; }
+  .titulos .formularioContacto .formularioContacto__dato {
+    padding: 15px;
+    margin: 5px; }
+    .titulos .formularioContacto .formularioContacto__dato .formularioContacto__dato--lbl-form {
+      font-size: 20px; }
+  .titulos .formularioContacto .formularioContacto__btnEnviar {
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px; } }
+
+@media (min-width: 350px) and (max-width: 385px) {
+  .titulos .titulo-importante1 {
+    font-size: 35px; }
+  .titulos .titulo-importante5 {
+    font-size: 15px; }
+  .titulos .formularioContacto .formularioContacto__opcional textarea {
+    font-size: 15px; }
+  .titulos .formularioContacto .formularioContacto__obligatorio input {
+    font-size: 15px; }
+  .titulos .formularioContacto .formularioContacto__obligatorio select {
+    font-size: 15px; }
+  .titulos .formularioContacto .formularioContacto__opcional input {
+    font-size: 15px; }
+  .titulos .formularioContacto .formularioContacto__dato {
+    padding: 15px;
+    margin: 5px; }
+    .titulos .formularioContacto .formularioContacto__dato .formularioContacto__dato--lbl-form {
+      font-size: 15px; }
+  .titulos .formularioContacto .titulos .formularioContacto .formularioContacto__btnEnviar {
+    font-size: 15px;
+    padding: 15px;
+    margin: 5px; } }
+
+@media (max-width: 350px) {
+  .titulos .titulo-importante1 {
+    font-size: 30px; }
+  .titulos .titulo-importante5 {
+    font-size: 13px; }
+  .titulos .formularioContacto .formularioContacto__opcional textarea {
+    font-size: 12px; }
+  .titulos .formularioContacto .formularioContacto__obligatorio input {
+    font-size: 12px; }
+  .titulos .formularioContacto .formularioContacto__obligatorio select {
+    font-size: 12px; }
+  .titulos .formularioContacto .formularioContacto__opcional input {
+    font-size: 12px; }
+  .titulos .formularioContacto .formularioContacto__dato {
+    padding: 10px;
+    margin: 5px; }
+    .titulos .formularioContacto .formularioContacto__dato .formularioContacto__dato--lbl-form {
+      font-size: 12px; }
+  .titulos .formularioContacto .formularioContacto__btnEnviar {
+    font-size: 12px;
+    padding: 10px;
+    margin: 5px; } }
 
 .proximos-estrenos {
   background-color: #c04338;
@@ -619,8 +759,8 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6";
     width: 600px;
     height: auto; }
-  .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
-    max-width: 500px; } }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+      max-width: 500px; } }
 
 @media (min-width: 400px) and (max-width: 599px) {
   .proximos-estrenos .titulo-importante1 {
@@ -631,10 +771,14 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6";
     width: 400px;
     height: auto; }
-  .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
-    max-width: 300px; }
-  .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
-    font-size: 20px; } }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+      max-width: 300px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
+      font-size: 20px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .genero-pelicula {
+      font-size: 15px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .resumen-pelicula {
+      font-size: 15px; } }
 
 @media (min-width: 350px) and (max-width: 399px) {
   .proximos-estrenos .titulo-importante1 {
@@ -645,10 +789,14 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6";
     width: 350px;
     height: auto; }
-  .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
-    max-width: 250px; }
-  .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
-    font-size: 15px; } }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+      max-width: 250px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
+      font-size: 15px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .genero-pelicula {
+      font-size: 13px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .resumen-pelicula {
+      font-size: 13px; } }
 
 @media (min-width: 300px) and (max-width: 349px) {
   .proximos-estrenos .titulo-importante1 {
@@ -659,10 +807,14 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6";
     width: 300px;
     height: auto; }
-  .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
-    max-width: 200px; }
-  .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
-    font-size: 12px; } }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+      max-width: 200px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
+      font-size: 12px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .genero-pelicula {
+      font-size: 10px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .resumen-pelicula {
+      font-size: 10px; } }
 
 @media (max-width: 299px) {
   .proximos-estrenos .titulo-importante1 {
@@ -673,7 +825,11 @@
     grid-template-areas: "film1" "film2" "film3" "film4" "film5" "film6";
     width: 230px;
     height: auto; }
-  .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
-    max-width: 200px; }
-  .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
-    font-size: 20px; } }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .imgfilm {
+      max-width: 200px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .titulo-importante4 {
+      font-size: 15px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .genero-pelicula {
+      font-size: 12px; }
+    .proximos-estrenos .contenedor-proximos-estrenos .film .info-pelicula .resumen-pelicula {
+      font-size: 12px; } }

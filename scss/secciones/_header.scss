@@ -11,7 +11,7 @@
     // align-content: space-between;
     @include myflex (row, baseline, flex-start, space-between);
     .encabezado-cuerpo {
-        .logo_img {
+        .logo-img {
             img {
                 height: 12vh;
             }
@@ -37,6 +37,50 @@
                     font-size: 18px;
                     &:hover {
                         background-color: rgb(235, 210, 25);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* MEDIA QUERIES*/
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .nav-encabezado {
+        .encabezado-cuerpo {
+            .mi-navbar {
+                .lista-enlaces {
+                    .enlace a {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 350px) and (max-width: 599px) {
+    .nav-encabezado {
+        .encabezado-cuerpo {
+            .mi-navbar {
+                .lista-enlaces {
+                    .enlace a {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 349px) {
+    .nav-encabezado {
+        .encabezado-cuerpo {
+            .mi-navbar {
+                .lista-enlaces {
+                    .enlace a {
+                        font-size: 15px;
                     }
                 }
             }

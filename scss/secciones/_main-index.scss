@@ -1,26 +1,6 @@
 /*MAIN INDEX*/
-.main-index {
-    position: relative;
-    &:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.5;
-        background-image: url("../recursos/inicio/portadaCine.jpg"); //url('https://assets.digitalocean.com/labs/images/community_bg.png');
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        background-size: cover;
-    }
-}
-
 .titulos {
-    position: relative;
-
-    //background-image: url("../recursos/inicio/portadaCine.jpg");
+    background-image: url("../recursos/inicio/portadaCine.jpg");
     min-height: 70vh;
     height: auto;
     // background-repeat: no-repeat;
@@ -58,7 +38,6 @@
         // margin: 50px;
         // padding-top: 30px;
         @extend .config-titulo-importante1;
-        // position: relative;
     }
 
     .titulo-importante2 {
@@ -109,87 +88,129 @@
 /* MEDIA QUERIES*/
 
 @media (min-width: 1400px) and (max-width: 1600px) {
-    .titulos .titulo-importante1 {
-        font-size: 70px;
-    }
+    .titulos {
+        .titulo-importante1 {
+            font-size: 70px;
+        }
 
-    .titulos .titulo-importante2 {
-        font-size: 50px;
+        .titulo-importante2 {
+            font-size: 50px;
+        }
+
+        .titulo-importante3 {
+            font-size: 40px;
+        }
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
-    .titulos .titulo-importante1 {
-        font-size: 70px;
-    }
+    .titulos {
+        .titulo-importante1 {
+            font-size: 70px;
+        }
 
-    .titulos .titulo-importante2 {
-        font-size: 50px;
+        .titulo-importante2 {
+            font-size: 50px;
+        }
+
+        .titulo-importante3 {
+            font-size: 40px;
+        }
     }
 }
 
 @media (min-width: 600px) and (max-width: 1199px) {
-    .titulos .titulo-importante1 {
-        font-size: 60px;
-    }
+    .titulos {
+        .titulo-importante1 {
+            font-size: 60px;
+        }
 
-    .titulos .titulo-importante2 {
-        font-size: 40px;
+        .titulo-importante2 {
+            font-size: 40px;
+        }
+
+        .titulo-importante3 {
+            font-size: 30px;
+        }
     }
 }
 
 @media (min-width: 500px) and (max-width: 599px) {
-    .titulos .titulo-importante1 {
-        font-size: 60px;
-    }
+    .titulos {
+        .titulo-importante1 {
+            font-size: 60px;
+        }
 
-    .titulos .titulo-importante2 {
-        font-size: 40px;
-    }
+        .titulo-importante2 {
+            font-size: 40px;
+        }
 
-    .titulos .contenedor-lista-animada {
-        font-size: 35px;
+        .titulo-importante3 {
+            font-size: 30px;
+        }
+
+        .contenedor-lista-animada {
+            font-size: 35px;
+        }
     }
 }
 
 @media (min-width: 386px) and (max-width: 499px) {
-    .titulos .titulo-importante1 {
-        font-size: 50px;
-    }
+    .titulos {
+        .titulo-importante1 {
+            font-size: 50px;
+        }
 
-    .titulos .titulo-importante2 {
-        font-size: 30px;
-    }
+        .titulo-importante2 {
+            font-size: 30px;
+        }
 
-    .titulos .contenedor-lista-animada {
-        font-size: 30px;
+        .titulo-importante3 {
+            font-size: 20px;
+        }
+
+        .contenedor-lista-animada {
+            font-size: 30px;
+        }
     }
 }
 
 @media (min-width: 350px) and (max-width: 385px) {
-    .titulos .titulo-importante1 {
-        font-size: 50px;
-    }
+    .titulos {
+        .titulo-importante1 {
+            font-size: 50px;
+        }
 
-    .titulos .titulo-importante2 {
-        font-size: 30px;
-    }
+        .titulo-importante2 {
+            font-size: 30px;
+        }
 
-    .titulos .contenedor-lista-animada {
-        font-size: 25px;
+        .titulo-importante3 {
+            font-size: 20px;
+        }
+
+        .contenedor-lista-animada {
+            font-size: 25px;
+        }
     }
 }
 
 @media (max-width: 349px) {
-    .titulos .titulo-importante1 {
-        font-size: 40px;
-    }
+    .titulos {
+        .titulo-importante1 {
+            font-size: 40px;
+        }
 
-    .titulos .titulo-importante2 {
-        font-size: 30px;
-    }
+        .titulo-importante2 {
+            font-size: 30px;
+        }
 
-    .titulos .contenedor-lista-animada {
-        font-size: 20px;
+        .titulo-importante3 {
+            font-size: 20px;
+        }
+
+        .contenedor-lista-animada {
+            font-size: 20px;
+        }
     }
 }
