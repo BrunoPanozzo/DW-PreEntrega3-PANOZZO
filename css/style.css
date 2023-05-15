@@ -72,6 +72,12 @@
     font-size: 18px; }
     .nav-encabezado .encabezado-cuerpo .mi-navbar .form-btn-buscar .boton-buscar:hover {
       background-color: #ebd219; }
+  .nav-encabezado div .down-arrow {
+    animation: animate__animated animate__bounce;
+    animation-duration: 5s; }
+    .nav-encabezado div .down-arrow:hover {
+      animation: animate__animated animate__bounce;
+      animation-duration: 5s; }
 
 /* MEDIA QUERIES*/
 @media (min-width: 600px) and (max-width: 1000px) {

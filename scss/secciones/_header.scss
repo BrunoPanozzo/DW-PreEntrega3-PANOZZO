@@ -10,12 +10,14 @@
     // align-items: flex-start;
     // align-content: space-between;
     @include myflex (row, baseline, flex-start, space-between);
+
     .encabezado-cuerpo {
         .logo-img {
             img {
                 height: 12vh;
             }
         }
+
         .mi-navbar {
             .lista-enlaces {
                 .enlace a {
@@ -23,6 +25,7 @@
                     color: $myColor;
                     font-size: 30px;
                     margin: 15px;
+
                     &:hover {
                         color: rgb(235, 210, 25);
                         background-color: transparent;
@@ -30,11 +33,13 @@
                     }
                 }
             }
+
             .form-btn-buscar {
                 .boton-buscar {
                     margin-right: 20px;
                     color: $myColor;
                     font-size: 18px;
+
                     &:hover {
                         background-color: rgb(235, 210, 25);
                     }
